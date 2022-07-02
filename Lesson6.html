@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    document.write("Sevgi her iyiliğin kapısıdır");
+</script>
+<body>
+    
+<div id="result"></div>
+<input type="button" value="Pass" onclick="pass()">
+
+<input type="button" value="Off" onclick="Off()">
+<img src="img/off.jpg" alt="Light" id="Pic">
+<input type="button"  value="Open" onclick="Open()">
+
+
+
+
+<script>
+document.getElementById("result").innerHTML="Hosgeldin Mahir AKSIN";
+
+function pass(){
+    document.getElementById("result").style.color="red"
+    document.getElementById("result").style.fontSize="100px";
+
+}
+function Open(){
+    document.getElementById("Pic").src="img/light.jpg";
+    function pass(){
+        document.getElementById("pass").style.color="black";
+    }
+   
+}
+function Off(){
+    document.getElementById("Pic").src="img/off.jpg"
+}
+
+
+    </script>
+</body>
+</html>
