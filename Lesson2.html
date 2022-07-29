@@ -7,25 +7,42 @@
     <title>Document</title>
 </head>
 <body>
-
-
 <input type="button"  value="Off Light" onclick="offLight()">  
 <img src="img/off.jpg"  alt="Light" id="Pic">
 <input type="button"  value="Open Light" onclick="openLight()">
 
+<input type="button" value="Tom" onclick="Tom()">
+<img src="img/Tom.jpg"  alt="Tom" id="tom">
+<input type="button" value="jery" onclick="Jery()">
+
+<input type="button" value="Tom" onclick="tom()">
+<img src="img/jery.jpg" alt="Jery" id="jery">
+<input type="button" value="Light" onclick="light()">
 
 
 <script>
-
 function offLight(){
     document.getElementById("Pic").src="img/off.jpg";
 }
-
 function openLight(){
     document.getElementById("Pic").src="img/light.jpg";
 }
 
-</script>
+function Tom(){
+    document.getElementById("tom").src="img/Tom.jpg"
+}
+function Jery(){
+    document.getElementById("tom").src="img/jery.jpg"
+}
+function tom(){
+    document.getElementById('jery').src="img/Tom.jpg"
+    }
+    function light(){
+        document.getElementById('jery').src="img/light.jpg"
+    }
 
+
+
+</script>
 </body>
 </html>

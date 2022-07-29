@@ -13,3 +13,8 @@ function off(){
 function openn(){
     document.getElementById("result").src="img/light.jpg";
 }
+function Fan(){
+alert("Uzi Fanı insandan yazılımcı olmaz");
+
+}
+
