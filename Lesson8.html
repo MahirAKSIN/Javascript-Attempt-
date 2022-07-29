@@ -9,7 +9,10 @@
 <body>
     
 <div id="result"></div>
+<div id="result1"></div>
 <input type="button" value="GetPersonel" onclick="GetPersonelInfo()">
+<input type="button" value="GetAge" onclick="GetAge()">
+<input type="button" value="Delete" onclick="Delete()">
 <script>
 
 
@@ -18,8 +21,20 @@ function GetPersonelInfo(){
 var LastName,FirstName;
 LastName="Aksin";
 FirstName="Mahir";
-document.getElementById('result').innerHTML= FirstName + " " + LastName;
+document.getElementById('result').innerHTML="First Name:" + FirstName + " Last Name " + LastName;
+document.getElementById('result').style.color="red"
 }
+function GetAge(){
+var age;
+age=31;
+document.getElementById('result1').innerHTML="Age :" + age;
+}
+function Delete(){
+    document.getElementById('result').innerHTML="";
+    document.getElementById('result1').innerHTML="";
+}
+
+
    </script>
 </body>
 </html>
