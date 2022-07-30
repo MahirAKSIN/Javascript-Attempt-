@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson_9</title>
+</head>
+
+<body>
+    <div id="result"> </div>
+    <div id="result1"></div>
+
+    <script>
+        Equals();
+        Try();
+
+        function Try() {
+
+            var x, y, z, sum;
+            x = 3;
+            y = 2;
+            sum = x + y;
+
+            if (x != y) {
+
+                document.getElementById('result').innerHTML = "Eşitlik sağlandi"
+
+            } else {
+                document.getElementById('result').innerHTML = "Eşitlik sağlanmadı"
+            }
+        }
+
+        function Equals() {
+            var x, y, z, sum;
+            x = 2;
+            y = 1;
+            sum = x * y;
+
+            if (x > y && sum == y) {
+                document.getElementById('result1').innerHTML = "Eşitlik sağlandı"
+
+            }
+            else {
+                document.getElementById('result1').innerHTML = "Eşitlik sağlanmadı"
+            }
+            document.write(typeof (y));
+
+
+
+
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

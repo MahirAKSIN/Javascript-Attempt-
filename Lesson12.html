@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson_12</title>
+</head>
+
+<body>
+
+
+    <div id="result"></div>
+
+    <script>
+
+        var car = {
+            driver: "Mahir",
+            name: "Nissan",
+            model: "2022",
+            color: "red",
+            start: function () {
+                return car.name + " " + car.model + " giriş yaptı";
+            },
+            drive: function () {
+
+                return car.name + "aracını" + car.driver + "suruyor";
+            },
+            brake: function () {
+
+                return car.name + "frene bastı";
+            },
+            stop: function () {
+                return car.driver + " durdu.";
+            }
+
+
+
+        };
+        function CarTest(par){
+
+            document.getElementById('result').innerHTML=par;
+
+        }
+
+        CarTest(car.start);
+        CarTest(car.drive);
+        CarTest(car.brake);
+        CarTest(car.stop);
+
+
+    </script>
+</body>
+
+</html>

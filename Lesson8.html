@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
-<div id="result"></div>
-<div id="result1"></div>
-<input type="button" value="GetPersonel" onclick="GetPersonelInfo()">
+
+    <div id="result"></div>
+    <div id="result1"></div>
+    <!-- <input type="button" value="GetPersonel" onclick="GetPersonelInfo()">
 <input type="button" value="GetAge" onclick="GetAge()">
-<input type="button" value="Delete" onclick="Delete()">
-<script>
+<input type="button" value="Delete" onclick="Delete()"> -->
+    <script>
+        GetPersonelInfo();
+        GetAge();
 
 
+        function GetPersonelInfo() {
+            var LastName, FirstName;
+            LastName = "Aksin";
+            FirstName = "Mahir";
+            document.getElementById('result').innerHTML = "First Name:" + FirstName + " Last Name " + LastName;
+            document.getElementById('result').style.color = "red"
+        }
+        function GetAge() {
+            var age;
+            age = 31;
+            document.getElementById('result1').innerHTML = "Age :" + age;
+        }
+        function Delete() {
+            document.getElementById('result').innerHTML = "";
+            document.getElementById('result1').innerHTML = "";
+        }
 
-function GetPersonelInfo(){
-var LastName,FirstName;
-LastName="Aksin";
-FirstName="Mahir";
-document.getElementById('result').innerHTML="First Name:" + FirstName + " Last Name " + LastName;
-document.getElementById('result').style.color="red"
-}
-function GetAge(){
-var age;
-age=31;
-document.getElementById('result1').innerHTML="Age :" + age;
-}
-function Delete(){
-    document.getElementById('result').innerHTML="";
-    document.getElementById('result1').innerHTML="";
-}
 
-
-   </script>
+    </script>
 </body>
+
 </html>
